@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Reto 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" >
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<div class="container">
+    <ul>
+        <li onclick="showtab(1)"><a  href="#disfrazContainer">Disfraz</a></li>
+        <li onclick="showtab(2)"><a href="#clienteContainer">Cliente</a></li>
+        <li onclick="showtab(3)"><a href="#mensajeContainer">Mensaje</a></li>
+    </ul>
+
+    <div style="display: block;" class="subContainer" id="disfrazContainer">
+    <h1>Disfraz</h1>
+
+    <div class="input">
+        <div class="inputContainer">
+            <label>Id</label>
+            <input type="number" id="iddisfraz" placeholder="id">
+        </div>
+
+        <div class="inputContainer">
+            <label>Marca</label>
+            <input type="text" id="brand" placeholder="brand">
+        </div>
+
+        <div class="inputContainer">
+            <label>Modelo</label>
+            <input type="number" id="model" placeholder="model">
+        </div>
+
+        <div class="inputContainer">
+            <label>Categoria de Id</label>
+            <input type="number" id="category_id" placeholder="category_id">
+        </div>
+
+        <div class="inputContainer">
+            <label>Nombre</label>
+            <input type="text" id="namedisfraz" placeholder="name">
+        </div>
+        
+    </div>
+
+    <div class="Boton">
+        <button onclick="disfraztraerInformacion()" > Consultar</button>
+        <button onclick="disfrazguardarInformacion()">Guardar</button>
+        <button onclick="disfrazeditarInformacion()">Actualizar</button>
+    </div>
+
+    <div class="resultadoss" id="resultado3"></div>
+
+    </div>
+
+
+    <div class="subContainer" id="clienteContainer">
+    <h1>Cliente</h1>
+
+    <div class="input">
+        <div class="inputContainer">
+            <label>Id</label>
+            <input type="number" id="idclient" placeholder="id">
+        </div>
+
+        <div class="inputContainer">
+            <label>Nombre</label>
+            <input type="text" id="nameclient" placeholder="name">
+        </div>
+
+        <div class="inputContainer">
+            <label>Email</label>
+            <input type="text" id="email" placeholder="email">
+        </div>
+
+        <div class="inputContainer">
+            <label>Edad</label>
+            <input type="number" id="age" placeholder="age">
+        </div>
+    </div>
+
+    <div class="Boton">
+        <button onclick="clientetraerInformacion()" > Consultar</button>
+        <button onclick="clienteguardarInformacion()">Guardar</button>
+        <button onclick="clienteeditarInformacion()">Actualizar</button>
+    </div>
+
+    <div class="resultadoss" id="resultado"></div>
+
+    </div>
+
+    <div class="subContainer" id="mensajeContainer">
+    <h1>Mensaje</h1>
+
+    <div class="input">
+        <div class="inputContainer">
+            <label>Id</label>
+            <input type="number" id="idmessage" placeholder="id">
+        </div>
+        <div class="inputContainer">
+            <label>Mensaje de texto</label>
+            <input type="text" id="messagegetext" placeholder="messagegetext">
+        </div>
+    </div>
+
+    <div class="Boton">
+        <button onclick="mensajetraerInformacion()" > Consultar</button>
+        <button onclick="mensajeguardarInformacion()">Guardar</button>
+        <button onclick="mensajeeditarInformacion()">Actualizar</button>
+    </div>
+
+    <div class="resultadoss" id="resultado2"></div>
+
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    padding: auto;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);}
+ul {
+    width: 100vw;
+    max-width: 940px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #a8eb12;
+    color: #fff;
+    margin: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+button{
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 0;
+    background-color: #a8eb12;
+    color: black;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    max-width: 20%;
+}
+input {
+    padding: 5px;
+    font-size: 14px;
+    border: solid #00bf72 1px;
+    margin-right: 10px;
+}
+.input {
+    padding: 21px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+table {
+    border: 5px #a8eb12 solid;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.resultadoss {
+    overflow: hidden;
+
+}
+.eliminar {
+    background-color: salmon;
+    padding: 5px;
+}
+td {
+    padding: 10px;
+}
+tr:nth-of-type(even) {
+    background-color: #a8eb12;
+}
+h1 {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.subContainer {
+    height: 100vw;
+    max-height: 350px;
+    width: 100vw;
+    max-width: 940px;
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    border-bottom: #a8eb12 5px solid;
+    overflow-y: scroll;
+}
+li {
+    padding: 10px;
+}
+.container {
+    margin: auto;
+}
