@@ -35,7 +35,7 @@ function clientepintarRespuesta(items){
         <td>${items[i].name}</td>
         <td>${items[i].email}</td>
         <td>${items[i].age}</td>
-        <td> <a href="/Reto-2/detalles.html?id=id=${items[i].id}">Detalles</a> </td>
+        <td> <a href="/Reto-2/detalles.html?id=${items[i].id}">Detalles</a> </td>
         <td> <button class="eliminar" onclick='clienteborrarElemento(${items[i].id})'>Borrar</button> </td>
         </tr>`
     }
