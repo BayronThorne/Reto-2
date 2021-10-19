@@ -35,8 +35,8 @@ function clientepintarRespuesta(items){
         <td>${items[i].name}</td>
         <td>${items[i].email}</td>
         <td>${items[i].age}</td>
-        <td> <button onclick='clienteborrarElemento(${items[i].id})'>Borrar</button>
-        <a href="http://127.0.0.1:8887/detalles.html?id=${items[i].id}">Detalles</a>
+        <td> <a href="/Reto-2/detalles.html?id=id=${items[i].id}">Detalles</a> </td>
+        <td> <button class="eliminar" onclick='clienteborrarElemento(${items[i].id})'>Borrar</button> </td>
         </tr>`
     }
     myTable+="</table>";
@@ -164,7 +164,7 @@ function mensajepintarrespuesta(items){
         myTable+=`<tr>
         <td>${items[i].id}</td>
         <td>${items[i].messagetext}</td>
-        <td> <a href="http://127.0.0.1:8887/detalles2.html?id=${items[i].id}">Detalles</a> </td>
+        <td> <a href="/Reto-2/detalles2.html?id=${items[i].id}">Detalles</a> </td>
         <td> <button class="eliminar" onclick='mensajeborrarElemento(${items[i].id})'>Borrar</button> </td>
         </tr>`
     }
@@ -288,9 +288,10 @@ function disfrazpintarrespuesta(items){
         <td>${items[i].model}</td>
         <td>${items[i].category_id}</td>
         <td>${items[i].name}</td>
-        <td> <button onclick='disfrazborrarElemento(${items[i].id})'>Borrar</button>
-        <a href="http://127.0.0.1:8887/detalles3.html?id=${items[i].id}">Detalles</a>
+        <td> <a href="/Reto-2/detalles3.html?id=${items[i].id}">Detalles</a> </td>
+        <td> <button class="eliminar" onclick='disfrazborrarElemento(${items[i].id})'>Borrar</button> </td>
         </tr>`
+
     }
     myTable+="</table>";
     $("#mitabla").detach();
