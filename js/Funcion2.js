@@ -5,7 +5,7 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 function llenarcampos(item){
-    $("#messagegetext").val(item[0].messagegetext);
+    $("#messagetext").val(item[0].messagetext);
 }
 function llenar(){
     let id = getParameterByName("id");

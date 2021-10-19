@@ -163,7 +163,7 @@ function mensajepintarrespuesta(items){
     for(i=0;i<items.length;i++){
         myTable+=`<tr>
         <td>${items[i].id}</td>
-        <td>${items[i].messagegetext}</td>
+        <td>${items[i].messagetext}</td>
         <td> <a href="http://127.0.0.1:8887/detalles2.html?id=${items[i].id}">Detalles</a> </td>
         <td> <button class="eliminar" onclick='mensajeborrarElemento(${items[i].id})'>Borrar</button> </td>
         </tr>`
@@ -176,7 +176,7 @@ function mensajepintarrespuesta(items){
 function mensajeguardarInformacion(){
     let myData={
         id:Number($("#idmessage").val()),
-        messagegetext:$("#messagegetext").val(),
+        messagetext:$("#messagetext").val(),
 
     };
     let dataToSend=JSON.stringify(myData);
@@ -188,7 +188,7 @@ function mensajeguardarInformacion(){
         success:function(respuesta2){
             $("#resultado2").empty();
             $("#id").val("");
-            $("#messagegetext").val("");
+            $("#messagetext").val("");
             mensajetraerInformacion();
             alert("se ha guardado el dato")
         }
@@ -199,7 +199,7 @@ function mensajeguardarInformacion(){
 function mensajeeditarInformacion(){
     let myData={
         id:Number($("#idmessage").val()),
-        messagegetext:$("#messagegetext").val(),
+        messagetext:$("#messagetext").val(),
 
     };
     console.log(myData);
@@ -213,7 +213,7 @@ function mensajeeditarInformacion(){
         success:function(respuesta2){
             $("#resultado2").empty();
             $("#id").val("");
-            $("#messagegetext").val("");
+            $("#messagetext").val("");
             mensajetraerInformacion();
             alert("se ha Actualizado")
         }
